@@ -14,7 +14,7 @@ function getDatabaseUri() {
   return process.env.NODE_ENV === "test"
     ? "postgresql://postgres:Lukadon1996$@localhost:5432/jobly_test"
     : process.env.DATABASE_URL ||
-        "postgres://brsssjpl:jrxYImG50b0n-xxlrYZaWdpqUr59Gbkr@kala.db.elephantsql.com/brsssjpl";
+        "postgresql://postgres:Lukadon1996$@localhost:5432/jobly";
 }
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
